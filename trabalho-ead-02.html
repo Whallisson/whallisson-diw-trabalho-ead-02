@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios De Cadastro</title>
+    </head>
+
+    <body>
+        <center>
+            <h1>Formulários De Cadastro</h1>
+        </center>
+        <form action='formulario.php' method='POST' >
+            <p><label>
+                digite seu nome completo: 
+                <input type="text" name="nome"
+                placeholder="Digite seu nome"
+                autofocus="true"
+                required="true">
+                
+            </label></p>   
+            <p><label>                     
+                digite seu e-mail: 
+                    <input type="email" name="email"
+                    placeholder="digite seu email">
+                    
+
+            </label></p>
+            <p> 
+                    
+                sexo:  
+                    <input type='radio' id='m' name='sexo' value='m' checked>
+                    <label for='m'>Masculino</label>
+                    <input type='radio' id='f' name='sexo' value='f' >
+                    <label for='f'>Feminino</label>
+                    
+            </p>
+            <p><label>
+                Data De Nascimento: 
+                <input type="text" 
+                placeholder="dd/mm/yyyy"
+                name="data">
+                
+
+            </label></p>
+            <p>               
+              Grau De Escolaridade  
+                    <select name="grau_de_escolaridade" size="1">
+                    <option value="medio">Ensino Médio</option>
+                    <option value="superior" selected="true">Ensino Superior</option>
+                    <option value="pos">Pós-Graduação</option>
+                    <option value="mestrado">Mestrado</option>
+                </select>
+            </p>
+
+            <p>
+                Estilos Musicais Preferidos:
+                <select name="estilos musicais" size="5" multiple="true">
+                    <option value="rock" selected="true" >Rock</option>
+                    <option value="funk">Funk</option>
+                    <option value="samba">Samba</option>
+                    <option value="pagode">Pagode</option>
+                    <option value="pop">pop</option>
+                </select>
+            </p>
+            <p><label>                     
+                    Nome De Usuario: 
+                        <input type="text" name="usuario"
+                        placeholder="digite seu nome de usuario">
+            </p></label>
+            
+            <p><label>                     
+                    Senha: 
+                        <input type="password" name="senha"
+                        placeholder="digite sua senha minimo 8 digitos">
+            </p></label>
+            <p>
+                    <label>
+                        Cor Preferida:
+                        <input type="color" name="Cor">
+                    </label>
+             </p>
+            <p> filhos:
+                <input type="number" name="filhos">
+            </p>
+            <p>
+                Quantidade de veículos:
+                <input type="range" name="veiculos">
+            </p>
+            <p>
+                Comentários sobre o site
+                <textarea cols="15" rows='5' ></textarea>
+            </p>
+            <p>
+                    <input type='checkbox' id='ofertas' name='ofertas' checked>
+                    <label for='oferta' >Receber ofertas por email</label>
+                    <input type='submit' value='Enviar!'>
+                    <input type='reset' value='limpar dados'>
+            </p>
+        </form>
+    </body>
+</html>
